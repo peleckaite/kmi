@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>KMI</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <main id="main">
+        <h1><b>KMI skaičiuoklė:</b></h1>
+
+
+
+        <form>
+            <a href="https://biomed.lt/60-svarstykles-kuno-mases-analizatoriai" target="_blank"><img src="../scales.png" alt="svarstykles" class="scales"></a> Įveskite ūgį (cm):&nbsp; <input class="langas" type="text" id="height"> <br /> Įveskite svorį (kg): <input class="langas" type="text" id="weight"><br />
+
+
+            <input type="button" value="Skaičiuoti KMI" onClick="calcKMI()" class="button">
+        </form>
+        <p class="result" id="kmi_index"></p>
+
+        <p class="diares" id="diagnosis"></p>
+<!--        <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank"> Dalintis Facebook`e </a>-->
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">KMI reikšmė</th>
+                    <th scope="col">KMI reikšmė</th>
+                    <th scope="col">LIGŲ RIZIKA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">18,5 - 24,9</th>
+                    <td>Normalus svoris</td>
+                    <td>Nėra</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">25,0 - 29,9</th>
+                    <td>Antsvoris</td>
+                    <td>Nedidelė, stengtis, kad nedidėtų</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">30,0 - 34,9</th>
+                    <td>Io nutukimas</td>
+                    <td>Padidėjusi, būtina mažinti svorį</td>
+                </tr>
+                <tr>
+                    <th scope="row">35 - 39,9</th>
+                    <td>IIo nutukimas</td>
+                    <td>Didelė, būtina mažinti svorį</td>
+                </tr>
+                <tr>
+                    <th scope="row">&#62;40</th>
+                    <td>IIIo (liguistas) nutukimas</td>
+                    <td>Labai didelė, būtina mažinti</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </main>
+
+    <script src="../js/myScript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
+</html>
